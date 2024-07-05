@@ -49,8 +49,8 @@ function Result({score, resetState}){
   const getResult = ()=>{
     let result = '';
     result += score.EI <2 ? 'I':'E';
-    result += score.SN <2 ? 'S':'N';
-    result += score.TF <2 ? 'T':'F';
+    result += score.SN >3 ? 'S':'N';
+    result += score.TF >2 ? 'T':'F';
     return results[result];
   }
   const result = getResult();
